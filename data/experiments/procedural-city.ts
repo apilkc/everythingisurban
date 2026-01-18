@@ -7,5 +7,4 @@ export const data: UpdateCardProps = {
   date: "DEMO",
   description: "Converting a map to a poster using Three.js and Perlin noise. Exploring the scale of digital concrete.",
   link: "https://github.com/originalankur/maptoposter",
-  image: ""
 };
