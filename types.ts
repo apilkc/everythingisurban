@@ -1,4 +1,3 @@
-
 export interface Book {
   id: string;
   title: string;
@@ -18,6 +17,7 @@ export interface UpdateCardProps {
   content?: string; // Long form text for the Full View
   link?: string;
   tags?: string[];
+  image?: string; // optional image file path / URL
 }
 
 export interface GalleryItem {
