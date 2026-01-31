@@ -13,12 +13,12 @@ export const latestReads: UpdateCardProps[] = [
   },
   {
     id: "read-02",
-    category: "WIRED",
-    title: "The Sovereign City State of the Future",
-    date: "2024.12.02",
+    category: "NYT",
+    title: "An Extremely Detailed Map of the 2024 Election",
+    date: "2026.01.23",
     description: "A deep dive into decentralised urban planning and the rise of private charter cities.",
-    link: "https://www.wired.com",
-    tags: ["POLITICS", "FUTURE"]
+    link: "https://www.nytimes.com/interactive/2025/us/elections/2024-election-map-precinct-results.html?unlocked_article_code=1.IlA.AeoL.ptQQN7koDwq-&smid=url-share",
+    tags: ["POLITICS", "GRAPHICS"]
   },
   {
     id: "read-03",
