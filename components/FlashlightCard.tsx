@@ -33,6 +33,16 @@ export const FullNoteView: React.FC<{ item: UpdateCardProps; onClose: () => void
           <h2 className="font-black uppercase text-sm md:text-lg tracking-tight hidden md:block">{item.title}</h2>
         </div>
         <div className="flex items-center gap-2">
+          {item.link && (
+            <a 
+              href={item.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1.5 px-3 py-1.5 bg-urban-red text-white font-mono text-[10px] uppercase font-bold hover:bg-urban-black dark:hover:bg-white dark:hover:text-black transition-all mr-2"
+            >
+              <ExternalLink size={12} /> Visit Link
+            </a>
+          )}
           <button className="p-2 hover:bg-black/5 dark:hover:bg-white/5 transition-colors"><Printer size={18} /></button>
           <button className="p-2 hover:bg-black/5 dark:hover:bg-white/5 transition-colors"><Share2 size={18} /></button>
           <button 
@@ -101,6 +111,16 @@ export const QuickNoteModal: React.FC<{ item: UpdateCardProps; onClose: () => vo
           {item.description}
         </p>
         <div className="flex flex-col gap-3">
+          {item.link && (
+            <a 
+              href={item.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full py-4 bg-urban-red text-white font-mono text-xs uppercase hover:bg-urban-black dark:hover:bg-white dark:hover:text-black transition-all flex items-center justify-center gap-2"
+            >
+              Visit Project <ExternalLink size={14} />
+            </a>
+          )}
           <button 
             onClick={onClose}
             className="w-full py-4 border border-black/10 dark:border-white/10 font-mono text-xs uppercase hover:bg-urban-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-all"
@@ -145,7 +165,18 @@ const FlashlightCard: React.FC<CardProps> = ({ item, onOpen }) => {
             <span className="font-mono text-[9px] text-urban-black/30 dark:text-urban-white/30">{item.date}</span>
           </div>
           <h3 className="text-lg font-black uppercase mb-3 text-urban-black dark:text-urban-white group-hover:text-urban-red leading-tight transition-colors tracking-tight">
-            {item.title}
+            {item.link ? (
+              <a 
+                href={item.link} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="hover:underline inline-flex items-center gap-1.5"
+              >
+                {item.title} <ExternalLink size={14} className="opacity-50 group-hover:opacity-100 transition-opacity" />
+              </a>
+            ) : (
+              item.title
+            )}
           </h3>
           <p className="text-urban-black/50 dark:text-urban-white/50 text-[10px] font-mono line-clamp-3 leading-snug tracking-tighter">
             {item.description}
@@ -166,6 +197,16 @@ const FlashlightCard: React.FC<CardProps> = ({ item, onOpen }) => {
                 >
                   <Maximize2 size={10} /> Full
                 </button>
+                {item.link && (
+                  <a 
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 py-1.5 bg-urban-red text-white font-mono text-[8px] uppercase font-bold hover:bg-urban-black dark:hover:bg-urban-white dark:hover:text-urban-black transition-all flex items-center justify-center gap-1.5"
+                  >
+                    <ExternalLink size={10} /> Visit
+                  </a>
+                )}
             </div>
         </div>
       </div>
