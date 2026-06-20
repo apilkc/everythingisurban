@@ -1,7 +1,5 @@
 import { UpdateCardProps } from '../../types';
-import { data as exp1 } from './procedural-city';
-import { data as exp2 } from './markitdown_card';
-
+import { data as exp1 } from './markitdown-card';
 export const experiments: UpdateCardProps[] = [
   exp1
 ];
