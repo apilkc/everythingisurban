@@ -52,14 +52,19 @@ export const LatestReads: React.FC = () => {
     return ["ALL", ...Array.from(tags).sort()];
   }, []);
 
+  // Ensure reads are shown newest-first (chronological descending)
+  const sortedLatestReads = useMemo(() => {
+    return [...latestReads].sort((a, b) => b.date.localeCompare(a.date));
+  }, []);
+
   const filteredReads = useMemo(() => {
-    return latestReads.filter(item => {
+    return sortedLatestReads.filter(item => {
       const matchesSearch = item.title.toLowerCase().includes(searchTerm.toLowerCase()) || 
                             item.description.toLowerCase().includes(searchTerm.toLowerCase());
       const matchesTag = selectedTag === "ALL" || item.tags?.includes(selectedTag);
       return matchesSearch && matchesTag;
     });
-  }, [searchTerm, selectedTag]);
+  }, [searchTerm, selectedTag, sortedLatestReads]);
 
   // Show 3 items initially
   const itemsToShow = isExpanded ? filteredReads : filteredReads.slice(0, 3);

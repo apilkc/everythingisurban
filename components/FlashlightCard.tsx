@@ -228,7 +228,9 @@ export const LatestNotes: React.FC = () => {
   }, []);
 
   const filteredWritings = useMemo(() => {
-    const list = writings.filter(w => {
+    // Sort writings newest-first, then filter
+    const sortedWritings = [...writings].sort((a, b) => b.date.localeCompare(a.date));
+    const list = sortedWritings.filter(w => {
       const matchesSearch = w.title.toLowerCase().includes(searchTerm.toLowerCase()) || 
         w.category.toLowerCase().includes(searchTerm.toLowerCase()) ||
         w.tags?.some(t => t.toLowerCase().includes(searchTerm.toLowerCase()));
