@@ -60,7 +60,7 @@ export const latestReads: UpdateCardProps[] = [
   {
     id: "read-07",
     category: "NYT",
-    title: "Artificial Intelligence Is Writing. Humans Are Reading.",
+    title: "I’m Begging You: Never Write With A.I.",
     date: "2026.08.04",
     description: "An opinion piece exploring how AI-generated text is reshaping authorship, readership, and the ethics of writing.",
     link: "https://www.nytimes.com/2026/08/04/opinion/artificial-intelligence-ai-writing.html?unlocked_article_code=1.3FA.Yhsa.wDAJ2RBWHl3e&smid=url-share",
