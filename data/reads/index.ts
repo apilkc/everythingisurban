@@ -64,6 +64,13 @@ export const latestReads: UpdateCardProps[] = [
     date: "2026.08.04",
     description: "An opinion piece exploring how AI-generated text is reshaping authorship, readership, and the ethics of writing.",
     link: "https://www.nytimes.com/2026/08/04/opinion/artificial-intelligence-ai-writing.html?unlocked_article_code=1.3FA.Yhsa.wDAJ2RBWHl3e&smid=url-share",
-    tags: ["AI", "OPINION", "WRITING"]
-  }
+    tags: ["AI", "OPINION", "WRITING"]  },
+  {
+    id: "read-08",
+    category: "NYT",
+    title: "How Climate Change Is Reshaping the Real Estate Market",
+    date: "2025.11.19",
+    description: "Rising insurance costs driven by climate risks are transforming home values and the housing market landscape.",
+    link: "https://www.nytimes.com/interactive/2025/11/19/climate/home-insurance-costs-real-estate-market.html?unlocked_article_code=1.5FA.e3iW.EmSU64oF4G9E&smid=url-share",
+    tags: ["CLIMATE", "REAL ESTATE", "ECONOMICS"]  }
 ];

@@ -1,22 +1,32 @@
 https://apilkc.github.io/everythingisurban/
 
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
 
-# This app was made in Google AI Studio
+# Everything is Urban
 
-This contains everything you need to run your app locally.
+A digital platform exploring the intersection of urbanism, planning, and design. Built with AI to share learnings and insights about how we can create more inclusive and resilient cities.
 
-View your app in AI Studio: https://ai.studio/apps/drive/1cg8ZdNULyaKNvRCv_LVcadNiRX2KTX5N
+## Philosophy
 
-## Run Locally
+This project is rooted in the belief that **planning is a powerful platform for change**. Cities shape how we live, connect, and thrive. Through critical analysis of urban theory, architecture, and contemporary urbanism, this site documents explorations into how we design cities that are:
 
-**Prerequisites:**  Node.js
+- **Inclusive** — accessible and welcoming to all communities
+- **Resilient** — adaptive and responsive to challenges
+- **Thoughtful** — informed by research, history, and contemporary practice
+
+## Built with AI
+
+This website was created using artificial intelligence as a collaborative tool—not to replace human creativity, but to amplify ideas and accelerate the process of sharing knowledge. The project demonstrates how AI can help document and disseminate learnings about the built environment.
+
+## Contents
+
+- **Latest Reads** — Curated articles and papers on urbanism, architecture, and planning
+- **Gallery** — Visual explorations of urban spaces and architectural interventions
+- **Code Experiments** — Interactive tools and visualizations about urban systems
+- **Library** — Key texts and theoretical frameworks in urban design
+- **Notes** — Essays and reflections connecting urbanism to technology and society
 
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+
+## View Online
+
+https://apilkc.github.io/everythingisurban/
